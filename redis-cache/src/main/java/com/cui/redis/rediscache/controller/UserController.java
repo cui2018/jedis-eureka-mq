@@ -60,7 +60,6 @@ public class UserController {
         }
         PaymentRequset paymentRequset = new PaymentRequset();
         paymentRequset.setTotalFee("10000");
-        
         String s = asyncPaymentService.submit(paymentRequset);
         return s;
     }
